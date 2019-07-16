@@ -32,14 +32,17 @@ interface ShippingPriceRequestInterface extends ExtensibleDataInterface
     public function getFreePackages(): float;
 
     /**
-     * @param \Magento\InventoryInStorePickupShippingApi\Api\Data\ShippingPriceRequestExtensionInterface|null $extensionAttributes
+     * Set extension attributes.
      *
+     * @param ShippingPriceRequestExtensionInterface|null $extensionAttributes
      * @return void
      */
     public function setExtensionAttributes(?ShippingPriceRequestExtensionInterface $extensionAttributes): void;
 
     /**
-     * @return \Magento\InventoryInStorePickupShippingApi\Api\Data\ShippingPriceRequestExtensionInterface|null
+     * Get extension attributes.
+     *
+     * @return ShippingPriceRequestExtensionInterface|null
      */
     public function getExtensionAttributes(): ?ShippingPriceRequestExtensionInterface;
 }
